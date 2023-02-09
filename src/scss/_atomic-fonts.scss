@@ -1,0 +1,16 @@
+@function font($size) {
+  $result: 16 * calc(($size + 1) / 2);
+  @return $result
+}
+
+@for $i from 1 through 7 {
+  $size: font($i);
+  
+  .font-#{$size} {
+      font-size: #{$size}px;
+  }
+}
+
+.font-small {
+  font-size: 12.8px
+}

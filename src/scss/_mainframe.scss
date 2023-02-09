@@ -1,0 +1,38 @@
+@mixin bold {
+  font-weight: 700;
+}
+
+@mixin upCase {
+  text-transform: uppercase;
+}
+
+body {
+  font: 16px/1.5 Roboto, sans-serif;
+  color: #cacaca;
+  background-color: #08020d;
+}
+
+h1,
+h2 {
+  line-height: 1.5;
+  @include bold;
+  @include upCase;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+}
