@@ -1,3 +1,6 @@
+// Переменные по умолчанию
+@import "variables";
+
 // Шрифты
 @import "fonts";
 
@@ -11,7 +14,7 @@
 @import "atomic-fonts";
 
 // Navigation bar
-@import "nav-bar";
+@import "navbar";
 
 // Hero-section
 @import "hero";
