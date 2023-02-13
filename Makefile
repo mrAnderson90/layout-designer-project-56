@@ -11,4 +11,4 @@ deploy:
 	npx surge ./src/
 
 sass:
-	sass ./src/styles/scss/style.scss ./src/styles/css/style.css
+	sass ./src/styles/scss/app.scss ./src/styles/css/style.css
