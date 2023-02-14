@@ -7,13 +7,14 @@
 }
 
 body {
-  font: 16px/1.5 Roboto, sans-serif;
+  font: 400 16px/1.5 Roboto, sans-serif;
   color: $primary;
   background-color: $bg-main;
 }
 
 h1,
-h2 {
+h2,
+h4 {
   line-height: 1.5;
   @include bold;
   @include upCase;
@@ -27,6 +28,10 @@ h2 {
   font-size: 38px;
 }
 
+h4 {
+  font-size: 18px;
+}
+
 @media (max-width: 414px) {
   h1 {
     font-size: 30px;
@@ -35,4 +40,9 @@ h2 {
   h2 {
     font-size: 18px;
   }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

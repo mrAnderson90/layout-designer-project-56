@@ -8,13 +8,16 @@
 @import "grid";
 
 // Мейнфрейм
-@import "mainframe";
+@import "general";
 
 // Атомарные размеры шрифтов
-@import "atomic-fonts";
+@import "atomic";
 
 // Navigation bar
 @import "navbar";
 
 // Hero-section
 @import "hero";
+
+// Подвал
+@import "footer";

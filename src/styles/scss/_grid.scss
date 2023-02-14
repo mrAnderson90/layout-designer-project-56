@@ -1,5 +1,16 @@
 * {
 	padding: 0;
 	margin: 0;
-  box-sizing: border-box;
+}
+
+header,
+main {
+
+	margin: 0 auto;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }

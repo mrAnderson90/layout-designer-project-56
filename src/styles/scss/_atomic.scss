@@ -1,5 +1,5 @@
 @function font($size) {
-  $result: 16 * calc(($size + 1) / 2);
+  $result: $basic * calc(($size + 1) / 2);
   @return $result
 }
 
