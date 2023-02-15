@@ -1,3 +1,32 @@
 .hero {
-  padding: 200px 0;
+	background-image: url('../../images/banner.png');
+	background-position: center;
+	background-size: cover;
+
+	p {
+		margin-top: 30px;
+	}
+
+	.registration {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(270px, 1fr));
+		grid-gap: 1.5rem;
+		max-width: 570px;
+
+		margin-top: 17px;
+
+		&-item {
+			min-height: 50px;
+			border: 2px solid $primary;
+			border-radius: 3px;
+
+			background-color: transparent;
+
+			&::placeholder {
+				font: 700 14/1.1 Roboto, sans-serif;
+				color: $white;
+				padding-left: 20px;
+			}
+		}
+	}
 }

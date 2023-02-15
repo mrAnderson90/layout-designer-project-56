@@ -6,6 +6,10 @@
   text-transform: uppercase;
 }
 
+@mixin text-center {
+	text-align: center;
+}
+
 body {
   font: 400 16px/1.5 Roboto, sans-serif;
   color: $primary;
@@ -16,6 +20,8 @@ h1,
 h2,
 h4 {
   line-height: 1.5;
+	text-align: center;
+	color: $white;
   @include bold;
   @include upCase;
 }
@@ -32,7 +38,7 @@ h4 {
   font-size: 18px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 1239px) {
   h1 {
     font-size: 30px;
   }
@@ -45,4 +51,51 @@ h4 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	padding: 1.5em 0;
+	color: $white;
+	border: none;
+	border-radius: 5px;
+	@include upCase;
+	@include text-center;
+	cursor: pointer;
+
+	&-green {
+		padding: 20px 30px;
+		background-color: $bg-green;
+	}
+
+	&-purple {
+		background-color: $bg-purple;
+	}
+
+	&-brown {
+		background-color: $bg-brown;
+	}
+
+	&-clear {
+		border: 1px solid $white;
+		background-color: transparent;
+	}
+
+	&-grey {
+		color: $primary;
+		border: 1px solid $primary;
+		background-color: transparent;
+	}
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px !important;
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	border: 0;
 }

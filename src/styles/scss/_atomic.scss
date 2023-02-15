@@ -12,5 +12,22 @@
 }
 
 .font-small {
-  font-size: 12.8px
+  font-size: 12.8px;
+}
+
+.font-13 {
+	font-size: 13.3px;
+}
+
+.center {
+	@include text-center;
+}
+
+.p-200 {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.col-span-2 {
+	grid-column: span 2;
 }
