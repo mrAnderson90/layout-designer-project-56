@@ -10,6 +10,10 @@
 	text-align: center;
 }
 
+@mixin capitalize {
+	text-transform: capitalize;
+}
+
 body {
   font: 400 16px/1.5 Roboto, sans-serif;
   color: $primary;
@@ -23,7 +27,16 @@ h4 {
   line-height: 1.5;
 	text-align: center;
 	color: $white;
-  @include bold;
+  @include upCase;
+}
+
+h1,
+h2,
+h4 {
+  line-height: 1.5;
+	text-align: center;
+	color: $white;
+	@include bold;
   @include upCase;
 }
 
@@ -37,6 +50,7 @@ h2 {
 
 h3 {
 	font-size: 24px;
+	font-weight: 400;
 }
 
 h4 {
@@ -93,6 +107,8 @@ a {
 	}
 
 	&-grey {
+		width: max-content;
+		padding: 1rem 30px;
 		color: $primary;
 		border: 1px solid $primary;
 		background-color: transparent;

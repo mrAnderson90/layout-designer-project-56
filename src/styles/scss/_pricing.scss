@@ -1,5 +1,4 @@
 .pricing-page {
-	padding-top: 100px;
 
 	.pricing {
 		display: flex;
@@ -23,6 +22,7 @@
 				align-items: flex-start;
 				justify-content: center;
 				column-gap: 1rem;
+				color: $white;
 
 				.price {
 					line-height: 1;

@@ -19,8 +19,28 @@
 	font-size: 13.3px;
 }
 
+.font-30 {
+	font-size: 30px;
+}
+
+.bold {
+	@include bold;
+}
+
 .center {
 	@include text-center;
+}
+
+.upperCase {
+	@include upCase;
+}
+
+.capitalize {
+	@include capitalize;
+}
+
+.p-top-100 {
+	padding-top: 100px;
 }
 
 .p-200 {
@@ -28,9 +48,25 @@
 	padding-bottom: 200px;
 }
 
+.mt-65 {
+	margin-top: 65px;
+}
+
+.mb-1 {
+	margin-bottom: 1em;
+}
+
+.mb-3 {
+	margin-bottom: 3rem;
+}
+
 .h-200 {
 	width: 100%;
 	height: 200px;
+}
+
+.row-reverse {
+	flex-direction: row-reverse;
 }
 
 .span-1 {
@@ -39,6 +75,10 @@
 
 .span-2 {
 	grid-column: span 2;
+}
+
+.orange {
+	color: $orange;
 }
 
 .bg-free {
