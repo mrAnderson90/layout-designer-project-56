@@ -1,5 +1,5 @@
 @function font($size) {
-  $result: $basic * calc(($size + 1) / 2);
+  $result: 16 * calc(($size + 1) / 2);
   @return $result
 }
 
@@ -28,6 +28,27 @@
 	padding-bottom: 200px;
 }
 
-.col-span-2 {
+.h-200 {
+	width: 100%;
+	height: 200px;
+}
+
+.span-1 {
+	grid-column: span 1;
+}
+
+.span-2 {
 	grid-column: span 2;
+}
+
+.bg-free {
+	background-image: url(../../images/subscribe_1.png);
+}
+
+.bg-standart {
+	background-image: url(../../images/subscribe_2.png);
+}
+
+.bg-premium {
+	background-image: url(../../images/subscribe_3.png);
 }
