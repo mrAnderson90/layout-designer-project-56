@@ -409,7 +409,7 @@ a {
 .footer-main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 62px 0;
+  padding: 3rem 0;
 }
 .footer-main-item {
   display: flex;
@@ -417,7 +417,7 @@ a {
   min-width: 250px;
 }
 .footer-main-item h4 {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   text-align: left;
 }
 .footer-main-item .follow {
@@ -437,7 +437,7 @@ a {
   display: flex;
   align-items: center;
   column-gap: 16px;
-  padding: 40px 0 49px;
+  padding: 2rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
