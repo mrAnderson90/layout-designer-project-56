@@ -78,7 +78,6 @@ a {
 
 .btn {
 	display: block;
-	width: 100%;
 	padding: 1.5em 0;
 	color: $white;
 	border: none;
@@ -100,6 +99,13 @@ a {
 		background-color: $bg-brown;
 	}
 
+	&-brown-small {
+		padding: 1rem 40px;
+		background-color: $bg-brown;
+		border-radius: 2rem;
+		text-transform: none;
+	}
+
 	&-clear {
 		padding: 20px 0;
 		border: 1px solid $white;
@@ -107,7 +113,6 @@ a {
 	}
 
 	&-grey {
-		width: max-content;
 		padding: 1rem 30px;
 		color: $primary;
 		border: 1px solid $primary;

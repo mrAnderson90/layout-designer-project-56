@@ -1,0 +1,13 @@
+.app {
+	&-item {
+		display: flex;
+		column-gap: 9rem;
+	}
+
+	&-content {
+		max-width: 50%;
+		display: flex;
+		flex-direction: column;
+		row-gap: 1rem;
+	}
+}

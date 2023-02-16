@@ -1,3 +1,13 @@
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../../fonts/Roboto/Roboto-Bold.ttf");
+}
 * {
   padding: 0;
   margin: 0;
@@ -77,7 +87,6 @@ a {
 
 .btn {
   display: block;
-  width: 100%;
   padding: 1.5em 0;
   color: #ffffff;
   border: none;
@@ -96,13 +105,18 @@ a {
 .btn-brown {
   background-color: #95390c;
 }
+.btn-brown-small {
+  padding: 1rem 40px;
+  background-color: #95390c;
+  border-radius: 2rem;
+  text-transform: none;
+}
 .btn-clear {
   padding: 20px 0;
   border: 1px solid #ffffff;
   background-color: transparent;
 }
 .btn-grey {
-  width: max-content;
   padding: 1rem 30px;
   color: #cacaca;
   border: 1px solid #cacaca;
@@ -118,6 +132,10 @@ a {
   overflow: hidden;
   white-space: nowrap;
   border: 0;
+}
+
+.w-max {
+  width: max-content;
 }
 
 .font-16 {
@@ -176,7 +194,7 @@ a {
   text-transform: capitalize;
 }
 
-.p-top-100 {
+.pt-100 {
   padding-top: 100px;
 }
 
@@ -195,6 +213,10 @@ a {
 
 .mb-3 {
   margin-bottom: 3rem;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 
 .h-200 {
@@ -367,6 +389,17 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
+}
+
+.app-item {
+  display: flex;
+  column-gap: 9rem;
+}
+.app-content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
 .footer {
