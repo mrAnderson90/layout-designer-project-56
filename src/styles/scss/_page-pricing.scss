@@ -1,51 +1,51 @@
 .pricing {
-	@include flex;
-	column-gap: 50px;
+  @include flex;
+  column-gap: 50px;
 
-	@include mobile {
-		flex-direction: column;
-		row-gap: 50px;
-	}
+  @include mobile {
+    flex-direction: column;
+    row-gap: 50px;
+  }
 
-	&-item {
-		box-sizing: border-box;
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: max-content 120px repeat(3, auto);
-		row-gap: 40px;
-		padding: 1.5rem;
-		border-radius: 1rem;
+  &-item {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 120px repeat(3, auto);
+    row-gap: 40px;
+    padding: 1.5rem;
+    border-radius: 1rem;
 
-		color: $white;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
+    color: $white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-		@include mobile {
-			max-width: 374px;
-			padding-top: 1rem;
-		}
-	}
+    @include mobile {
+      max-width: 374px;
+      padding-top: 1rem;
+    }
+  }
 
-	&-value {
-		@include flex(center, flex-start) {
-			column-gap: 1rem;
-		}
-		color: $white;
-		.price {
-			line-height: 1;
-		}
+  &-value {
+    @include flex(center, flex-start) {
+      column-gap: 1rem;
+    }
+    color: $white;
+    .price {
+      line-height: 1;
+    }
 
-		.value {
-			@include upCase;
-		}
-	}
+    .value {
+      @include upCase;
+    }
+  }
 
-	&-footer {
-		margin: 1.5rem 0 40px;
+  &-footer {
+    margin: 1.5rem 0 40px;
 
-		&-main {
-			color: $white;
-		}
-	}
+    &-main {
+      color: $white;
+    }
+  }
 }

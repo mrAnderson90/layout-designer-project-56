@@ -1,42 +1,42 @@
 .hero {
-	background-image: url('../../images/banner.png');
-	background-position: center;
-	background-size: cover;
+  background-image: url('../../images/banner.png');
+  background-position: center;
+  background-size: cover;
 
-	color: $white;
+  color: $white;
 
-	h2 {
-		margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 2rem;
 
-		@include mobile {
-			margin-bottom: 1rem;
-		}
-	}
+    @include mobile {
+      margin-bottom: 1rem;
+    }
+  }
 
-	.registration {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(270px, 1fr));
-		grid-gap: 1.5rem;
-		max-width: 570px;
+  .registration {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(270px, 1fr));
+    grid-gap: 1.5rem;
+    max-width: 570px;
 
-		margin: 0 auto;
+    margin: 0 auto;
 
-		@include mobile {
-			grid-template-columns: 100%;
-		}
+    @include mobile {
+      grid-template-columns: 100%;
+    }
 
-		&-item {
-			min-height: 50px;
-			border: 2px solid $primary;
-			border-radius: 3px;
+    &-item {
+      min-height: 50px;
+      border: 2px solid $primary;
+      border-radius: 3px;
 
-			background-color: transparent;
+      background-color: transparent;
 
-			&::placeholder {
-				font: 700 14/1.1 Roboto, sans-serif;
-				color: $white;
-				padding-left: 20px;
-			}
-		}
-	}
+      &::placeholder {
+        font: 700 14/1.1 Roboto, sans-serif;
+        color: $white;
+        padding-left: 20px;
+      }
+    }
+  }
 }

@@ -1,84 +1,84 @@
 .nav-container {
-	position: relative;
-	width: 100%;
-	height: auto;
+  position: relative;
+  width: 100%;
+  height: auto;
 
-	.navbar {
-		position: absolute;
-		top: 25px;
-		width: 100%;
-		@include flex;
+  .navbar {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    @include flex;
 
-		@include mobile {
-			flex-direction: column;
-			align-items: flex-start;
-		}
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
-		> * {
-			font-size: 11px;
-			color: $primary;
-			@include upCase;
-			text-decoration: none;
+    > * {
+      font-size: 11px;
+      color: $primary;
+      @include upCase;
+      text-decoration: none;
 
-			@include mobile {
-				margin-right: 0;
-			}
-		}
-	
-		.logo {
-			margin-right: 90px;
-			@include flex;
+      @include mobile {
+        margin-right: 0;
+      }
+    }
+  
+    .logo {
+      margin-right: 90px;
+      @include flex;
 
-			@include mobile {
-				margin-bottom: 1rem;
-			}
+      @include mobile {
+        margin-bottom: 1rem;
+      }
 
-		&::before {
-			display: inline-block;
-			width: 1.5rem;
-			height: 1.5rem;
-	
-			margin-right: 1rem;
-			background-image: url("../../images/logo.svg");
-			background-repeat: no-repeat;
-			background-size: cover;
-			content: "";
-			}
-		}
-	
-		.nav-item {
-			margin-right: 1.5rem;
-		}
-	
-		.search {
-			margin-left: auto;
+    &::before {
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+  
+      margin-right: 1rem;
+      background-image: url("../../images/logo.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      }
+    }
+  
+    .nav-item {
+      margin-right: 1.5rem;
+    }
+  
+    .search {
+      margin-left: auto;
 
-			@include mobile {
-				width: 100%;
-				margin-top: 1rem;
-				margin-left: 0;
-			}
+      @include mobile {
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 0;
+      }
 
-			&-item {
-				width: 248px;
-				margin-left: auto;
-				padding: 5px 10px;
-				border: none;
-				border-radius: 50px;
-				background-color: #3c3b3d;
+      &-item {
+        width: 248px;
+        margin-left: auto;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 50px;
+        background-color: #3c3b3d;
 
-				@include mobile {
-					width: 100%;
-				}
+        @include mobile {
+          width: 100%;
+        }
 
-				&::placeholder {
-					font: 400 13.3/1.3 Roboto, sans-serif;
-					@include upCase;
-					color: $primary;
-					opacity: 0.5;
-				}
-			}
-		}
-	}
+        &::placeholder {
+          font: 400 13.3/1.3 Roboto, sans-serif;
+          @include upCase;
+          color: $primary;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
 }
 

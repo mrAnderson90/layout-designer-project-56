@@ -1,24 +1,24 @@
 .app {
-	&-item {
-		display: flex;
-		column-gap: 9rem;
+  &-item {
+    display: flex;
+    column-gap: 9rem;
 
-		@include mobile {
-			@include flex {
-				flex-direction: column-reverse;
-			} 
-		}
-	}
+    @include mobile {
+      @include flex {
+        flex-direction: column-reverse;
+      } 
+    }
+  }
 
-	&-content {
-		max-width: 50%;
-		@include flex(flex-start, stretch) {
-			flex-direction: column;
-		}
-		row-gap: 1rem;
+  &-content {
+    max-width: 50%;
+    @include flex(flex-start, stretch) {
+      flex-direction: column;
+    }
+    row-gap: 1rem;
 
-		@include mobile {
-			max-width: 100%;
-		}
-	}
+    @include mobile {
+      max-width: 100%;
+    }
+  }
 }

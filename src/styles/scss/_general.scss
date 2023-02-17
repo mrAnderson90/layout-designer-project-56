@@ -9,8 +9,8 @@ h2,
 h3,
 h4 {
   line-height: 1.5;
-	text-align: center;
-	color: $white;
+  text-align: center;
+  color: $white;
   @include upCase;
 }
 
@@ -18,9 +18,9 @@ h1,
 h2,
 h4 {
   line-height: 1.5;
-	text-align: center;
-	color: $white;
-	@include bold;
+  text-align: center;
+  color: $white;
+  @include bold;
   @include upCase;
 }
 
@@ -33,8 +33,8 @@ h2 {
 }
 
 h3 {
-	font-size: 24px;
-	font-weight: 400;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 h4 {
@@ -50,13 +50,13 @@ h4 {
     font-size: 18px;
   }
 
-	h3 {
+  h3 {
     font-size: $basic!important;
   }
 
-	img {
-		width: 100%;
-	}
+  img {
+    width: 100%;
+  }
 }
 
 a {
@@ -65,56 +65,56 @@ a {
 }
 
 .btn {
-	display: block;
-	padding: 1.5em 0;
-	color: $white;
-	border: none;
-	border-radius: 5px;
-	@include upCase;
-	@include text-center;
-	cursor: pointer;
+  display: block;
+  padding: 1.5em 0;
+  color: $white;
+  border: none;
+  border-radius: 5px;
+  @include upCase;
+  @include text-center;
+  cursor: pointer;
 
-	&-green {
-		padding: 20px 30px;
-		background-color: $bg-green;
-	}
+  &-green {
+    padding: 20px 30px;
+    background-color: $bg-green;
+  }
 
-	&-purple {
-		background-color: $bg-purple;
-	}
+  &-purple {
+    background-color: $bg-purple;
+  }
 
-	&-brown {
-		background-color: $bg-brown;
-	}
+  &-brown {
+    background-color: $bg-brown;
+  }
 
-	&-brown-small {
-		padding: 1rem 40px;
-		background-color: $bg-brown;
-		border-radius: 2rem;
-		text-transform: none;
-	}
+  &-brown-small {
+    padding: 1rem 40px;
+    background-color: $bg-brown;
+    border-radius: 2rem;
+    text-transform: none;
+  }
 
-	&-clear {
-		padding: 20px 0;
-		border: 1px solid $white;
-		background-color: transparent;
-	}
+  &-clear {
+    padding: 20px 0;
+    border: 1px solid $white;
+    background-color: transparent;
+  }
 
-	&-grey {
-		padding: 1rem 30px;
-		color: $primary;
-		border: 1px solid $primary;
-		background-color: transparent;
-	}
+  &-grey {
+    padding: 1rem 30px;
+    color: $primary;
+    border: 1px solid $primary;
+    background-color: transparent;
+  }
 }
 
 .sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px !important;
-	padding: 0;
-	overflow: hidden;
-	white-space: nowrap;
-	border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px !important;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
 }
