@@ -34,19 +34,20 @@ h2,
 h3,
 h4 {
   line-height: 1.5;
-  text-align: center;
   color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
   text-transform: uppercase;
 }
 
 h1,
 h2,
 h4 {
-  line-height: 1.5;
-  text-align: center;
-  color: #ffffff;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 h1 {
@@ -580,6 +581,30 @@ a {
   content: "Morten Harket";
 }
 
+.discography-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-gap: 25px 50px;
+}
+@media (max-width: 1239px) {
+  .discography-bar {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+.discography-wallpaper {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 18px;
+}
+@media (max-width: 1239px) {
+  .discography-wallpaper {
+    display: inline-block;
+    width: 137px;
+    height: 137px;
+  }
+}
+
 .footer {
   color: #e0e0e0;
   background-image: linear-gradient(265deg, #95390c 14.9%, #5328a1 68.95%);
@@ -602,7 +627,7 @@ a {
 }
 .footer-main-item h4 {
   margin-bottom: 1rem;
-  text-align: left;
+  text-transform: uppercase;
 }
 .footer-main-item .follow {
   display: flex;

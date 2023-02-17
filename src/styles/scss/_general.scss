@@ -9,19 +9,20 @@ h2,
 h3,
 h4 {
   line-height: 1.5;
-  text-align: center;
   color: $white;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
   @include upCase;
 }
 
 h1,
 h2,
 h4 {
-  line-height: 1.5;
-  text-align: center;
-  color: $white;
   @include bold;
-  @include upCase;
 }
 
 h1 {
