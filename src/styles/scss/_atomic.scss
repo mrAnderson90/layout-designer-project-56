@@ -23,8 +23,12 @@
   font-size: 13.3px;
 }
 
-.font-30 {
+.f-30 {
   font-size: 30px;
+
+  @include mobile {
+    font-size: $basic;
+  }
 }
 
 .bold {

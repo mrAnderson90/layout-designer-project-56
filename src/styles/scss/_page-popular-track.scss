@@ -1,0 +1,42 @@
+.poptrack {
+  &-bar {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 50px;
+    row-gap: 25px;
+
+    @include mobile {
+      grid-template-columns: 100%;
+    }
+  }
+
+  &-wallpaper {
+    @include square(55px);
+  }
+
+  &-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 15px;
+  }
+
+  &-info {
+    @include flex(space-between);
+  }
+
+  &-title {
+    @extend .font-small;
+    @include bold;
+
+    &::after {
+      display: block;
+      @extend .font-small;
+      font-weight: 400;
+      @include capitalize;
+      @extend .left;
+      color: $grey;
+
+      content: "Morten Harket";
+    }
+  }
+}

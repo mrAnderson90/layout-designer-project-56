@@ -74,7 +74,7 @@ h4 {
     font-size: 18px;
   }
   h3 {
-    font-size: 16px !important;
+    font-size: 16px;
   }
   img {
     width: 100%;
@@ -165,7 +165,7 @@ a {
   font-size: 64px;
 }
 
-.font-small {
+.font-small, .poptrack-title::after, .poptrack-title {
   font-size: 12.8px;
 }
 
@@ -173,8 +173,13 @@ a {
   font-size: 13.3px;
 }
 
-.font-30 {
+.f-30 {
   font-size: 30px;
+}
+@media (max-width: 1239px) {
+  .f-30 {
+    font-size: 16px;
+  }
 }
 
 .bold {
@@ -185,7 +190,7 @@ a {
   text-align: center;
 }
 
-.left {
+.left, .poptrack-title::after {
   text-align: left;
 }
 
@@ -536,6 +541,43 @@ a {
   background-image: url("../../images/heart.svg");
   filter: invert(1);
   content: "";
+}
+
+.poptrack-bar {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 50px;
+  row-gap: 25px;
+}
+@media (max-width: 1239px) {
+  .poptrack-bar {
+    grid-template-columns: 100%;
+  }
+}
+.poptrack-wallpaper {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+}
+.poptrack-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 15px;
+}
+.poptrack-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.poptrack-title {
+  font-weight: 700;
+}
+.poptrack-title::after {
+  display: block;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #e0e0e0;
+  content: "Morten Harket";
 }
 
 .footer {
