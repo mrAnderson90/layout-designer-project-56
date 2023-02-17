@@ -35,6 +35,10 @@
   @include text-center;
 }
 
+.left {
+  text-align: left;
+}
+
 .upperCase {
   @include upCase;
 }
@@ -60,8 +64,12 @@
   margin-top: 65px;
 }
 
-.mb-1 {
+.mb-1em {
   margin-bottom: 1em;
+}
+
+.mb-1rem {
+  margin-bottom: 1rem;
 }
 
 .mb-3 {
@@ -94,13 +102,19 @@
 }
 
 .bg-free {
-  background-image: url(../../images/subscribe_1.png);
+  background-image: url("../../images/subscribe_1.png");
 }
 
 .bg-standart {
-  background-image: url(../../images/subscribe_2.png);
+  background-image: url("../../images/subscribe_2.png");
 }
 
 .bg-premium {
-  background-image: url(../../images/subscribe_3.png);
+  background-image: url("../../images/subscribe_3.png");
+}
+
+.bg-artist {
+  @include bg-center {
+    background-image: url("../../images/Morten Harket.png");
+  }
 }

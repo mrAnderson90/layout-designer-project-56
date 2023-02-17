@@ -1,0 +1,36 @@
+.art-btns {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-gap: 1.5rem;
+
+  @include mobile {
+    grid-template-columns: 200px;
+  }
+
+  .icon {
+    @include flex(flex-start);
+    column-gap: 1rem;
+  }
+
+  .play {
+    &::before {
+      @include square(20px);
+      @include bg-center {
+        background-image: url("../../images/play-button.svg");
+        filter: invert(1);
+      }
+      content: "";
+    }
+  }
+
+  .heart {
+    &::before {
+      @include square(20px);
+      @include bg-center {
+        background-image: url("../../images/heart.svg");
+        filter: invert(1);
+      }
+      content: "";
+    }
+  }
+}

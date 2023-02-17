@@ -1,3 +1,9 @@
+@mixin square($side) {
+	display: inline-block;
+	width: $side;
+	height: $side;
+}
+
 @mixin bold {
   font-weight: 700;
 }
@@ -19,6 +25,13 @@
   justify-content: $justify-content;
   align-items: $align-items;
   
+  @content;
+}
+
+@mixin bg-center {
+  background-position: center;
+  background-size: cover;
+
   @content;
 }
 
