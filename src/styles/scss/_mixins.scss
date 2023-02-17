@@ -1,0 +1,21 @@
+@mixin bold {
+  font-weight: 700;
+}
+
+@mixin upCase {
+  text-transform: uppercase;
+}
+
+@mixin text-center {
+	text-align: center;
+}
+
+@mixin capitalize {
+	text-transform: capitalize;
+}
+
+@mixin mobile {
+	@media (max-width: 1239px) {
+		@content;
+	}
+}
