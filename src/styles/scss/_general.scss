@@ -51,8 +51,12 @@ h4 {
   }
 
 	h3 {
-    font-size: $basic;
+    font-size: $basic!important;
   }
+
+	img {
+		width: 100%;
+	}
 }
 
 a {

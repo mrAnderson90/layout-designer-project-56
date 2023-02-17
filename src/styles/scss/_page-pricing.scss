@@ -1,7 +1,6 @@
 .pricing {
-	display: flex;
+	@include flex;
 	column-gap: 50px;
-	margin: 45px 0;
 
 	@include mobile {
 		flex-direction: column;
@@ -9,6 +8,7 @@
 	}
 
 	&-item {
+		box-sizing: border-box;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: max-content 120px repeat(3, auto);
@@ -16,11 +16,13 @@
 		padding: 1.5rem;
 		border-radius: 1rem;
 
+		color: $white;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 
 		@include mobile {
+			max-width: 374px;
 			padding-top: 1rem;
 		}
 	}
