@@ -2,6 +2,12 @@
 	&-item {
 		display: flex;
 		column-gap: 9rem;
+
+		@include mobile {
+			@include flex {
+				flex-direction: column-reverse;
+			} 
+		}
 	}
 
 	&-content {
@@ -10,5 +16,9 @@
 			flex-direction: column;
 		}
 		row-gap: 1rem;
+
+		@include mobile {
+			max-width: 100%;
+		}
 	}
 }

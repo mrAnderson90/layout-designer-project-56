@@ -466,6 +466,14 @@ a {
   display: flex;
   column-gap: 9rem;
 }
+@media (max-width: 1239px) {
+  .app-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
 .app-content {
   max-width: 50%;
   display: flex;
@@ -473,6 +481,11 @@ a {
   align-items: stretch;
   flex-direction: column;
   row-gap: 1rem;
+}
+@media (max-width: 1239px) {
+  .app-content {
+    max-width: 100%;
+  }
 }
 
 .footer {
