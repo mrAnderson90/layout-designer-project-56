@@ -14,9 +14,13 @@
 }
 
 .container {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 1239px) {
+  .container {
+    margin: 0 20px;
+  }
 }
 
 .flex-center {
@@ -255,13 +259,19 @@ a {
 .nav-container {
   position: relative;
   width: 100%;
+  height: auto;
 }
 .nav-container .navbar {
   position: absolute;
   top: 25px;
   width: 100%;
   display: flex;
-  align-items: center;
+}
+@media (max-width: 1239px) {
+  .nav-container .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .nav-container .navbar > * {
   font-size: 11px;
@@ -269,25 +279,45 @@ a {
   text-transform: uppercase;
   text-decoration: none;
 }
+@media (max-width: 1239px) {
+  .nav-container .navbar > * {
+    margin-right: 0;
+  }
+}
 .nav-container .navbar .logo {
+  margin-right: 90px;
   display: flex;
   align-items: center;
-  margin-right: 90px;
+}
+@media (max-width: 1239px) {
+  .nav-container .navbar .logo {
+    margin-bottom: 1rem;
+  }
 }
 .nav-container .navbar .logo::before {
   display: inline-block;
-  min-width: 24px;
-  height: 24px;
-  margin-right: 16px;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
   background-image: url("../../images/logo.svg");
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
 }
 .nav-container .navbar .nav-item {
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 .nav-container .navbar .search {
+  margin-left: auto;
+}
+@media (max-width: 1239px) {
+  .nav-container .navbar .search {
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+.nav-container .navbar .search-item {
   width: 248px;
   margin-left: auto;
   padding: 5px 10px;
@@ -295,8 +325,14 @@ a {
   border-radius: 50px;
   background-color: #3c3b3d;
 }
-.nav-container .navbar .search::placeholder {
-  font: 13.3/1.3 Roboto, sans-serif;
+@media (max-width: 1239px) {
+  .nav-container .navbar .search-item {
+    width: 100%;
+  }
+}
+.nav-container .navbar .search-item::placeholder {
+  font: 400 13.3/1.3 Roboto, sans-serif;
+  text-transform: uppercase;
   color: #cacaca;
   opacity: 0.5;
 }
