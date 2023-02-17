@@ -43,6 +43,10 @@
 	@include capitalize;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 .pt-100 {
 	padding-top: 100px;
 }
@@ -81,8 +85,8 @@
 	grid-column: span 1;
 }
 
-.span-2 {
-	grid-column: span 2;
+.span-row {
+	grid-column: 1 / -1;
 }
 
 .orange {

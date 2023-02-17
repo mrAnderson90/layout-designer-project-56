@@ -7,7 +7,7 @@
 		position: absolute;
 		top: 25px;
 		width: 100%;
-		display: flex;
+		@include flex;
 
 		@include mobile {
 			flex-direction: column;
@@ -27,8 +27,7 @@
 	
 		.logo {
 			margin-right: 90px;
-			display: flex;
-			align-items: center;
+			@include flex;
 
 			@include mobile {
 				margin-bottom: 1rem;
