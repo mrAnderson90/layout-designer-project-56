@@ -8,8 +8,13 @@
 	);
 
 	&-main {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		display: flex;
+		column-gap: 40px;
+
+		@include mobile {
+			flex-direction: column;
+			row-gap: 30px;
+		}
 
 		padding: 3rem 0;
 
@@ -24,8 +29,7 @@
 			}
 
 			.follow {
-				display: flex;
-				align-items: center;
+				@include flex(flex-start);
 				column-gap: 24px;
 
 				.follow-link {
@@ -42,11 +46,15 @@
 	}
 
 	&-nav {
-		display: flex;
-		align-items: center;
+		@include flex(flex-start);
 		column-gap: 16px;
+
+		@include mobile {
+			align-items: flex-start;
+			flex-direction: column;
+			row-gap: 1rem;
+		}
 
 		padding: 2rem 0;
 	}
-
 }
