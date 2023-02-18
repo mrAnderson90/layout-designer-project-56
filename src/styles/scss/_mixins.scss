@@ -1,7 +1,7 @@
 @mixin square($side) {
-	display: inline-block;
-	width: $side;
-	height: $side;
+  display: inline-block;
+  width: $side;
+  height: $side;
 }
 
 @mixin bold {
@@ -20,14 +20,6 @@
   text-transform: capitalize;
 }
 
-@mixin flex($justify-content: center, $align-items: center) {
-  display: flex;
-  justify-content: $justify-content;
-  align-items: $align-items;
-  
-  @content;
-}
-
 @mixin bg-center {
   background-position: center;
   background-size: cover;
@@ -38,5 +30,25 @@
 @mixin mobile {
   @media (max-width: 1239px) {
     @content;
+  }
+}
+
+@mixin flex($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  
+  @content;
+}
+
+@mixin grid-bar {
+  &-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 25px 50px;
+
+    @include mobile {
+      grid-template-columns: repeat(2, 137px);
+    }
   }
 }

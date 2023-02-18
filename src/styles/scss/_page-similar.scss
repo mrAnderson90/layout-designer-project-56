@@ -1,5 +1,5 @@
-.discography {
-	@include grid-bar;
+.similar {
+  @include grid-bar;
 
   &-wallpaper {
     @include square(250px);
@@ -8,5 +8,9 @@
     @include mobile {
       @include square(137px);
     }
+  }
+
+  &-info {
+    @include text-center;
   }
 }

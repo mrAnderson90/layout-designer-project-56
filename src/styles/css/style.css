@@ -588,7 +588,7 @@ a {
 }
 @media (max-width: 1239px) {
   .discography-bar {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 137px);
   }
 }
 .discography-wallpaper {
@@ -603,6 +603,33 @@ a {
     width: 137px;
     height: 137px;
   }
+}
+
+.similar-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-gap: 25px 50px;
+}
+@media (max-width: 1239px) {
+  .similar-bar {
+    grid-template-columns: repeat(2, 137px);
+  }
+}
+.similar-wallpaper {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 18px;
+}
+@media (max-width: 1239px) {
+  .similar-wallpaper {
+    display: inline-block;
+    width: 137px;
+    height: 137px;
+  }
+}
+.similar-info {
+  text-align: center;
 }
 
 .footer {
