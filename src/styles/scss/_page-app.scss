@@ -16,6 +16,7 @@
       flex-direction: column;
     }
     row-gap: 1rem;
+		padding-top: 1rem;
 
     @include mobile {
       max-width: 100%;
