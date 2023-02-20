@@ -405,15 +405,17 @@ a {
   }
 }
 .hero .registration-item {
+  box-sizing: border-box;
   min-height: 50px;
+  padding-left: 20px;
+  color: #ffffff;
   border: 2px solid #cacaca;
   border-radius: 3px;
   background-color: transparent;
 }
 .hero .registration-item::placeholder {
-  font: 700 14px/1.1 Roboto, sans-serif;
+  font: 700 14px/1rem Roboto, sans-serif;
   color: #ffffff;
-  padding-left: 20px;
 }
 
 .pricing {

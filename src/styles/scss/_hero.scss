@@ -27,16 +27,18 @@
     }
 
     &-item {
+			box-sizing: border-box;
       min-height: 50px;
+			padding-left: 20px;
+			color: $white;
       border: 2px solid $primary;
       border-radius: 3px;
 
       background-color: transparent;
 
       &::placeholder {
-        font: 700 14px/1.1 Roboto, sans-serif;
+        font: 700 14px/1rem Roboto, sans-serif;
         color: $white;
-        padding-left: 20px;
       }
     }
   }
