@@ -5,6 +5,10 @@
       margin-top: 3rem;
       margin-bottom: 20px;
     }
+
+		@include mobile {
+			margin-top: 1.5rem;
+		}
 }
 
 .art-btns {
