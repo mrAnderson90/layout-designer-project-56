@@ -721,7 +721,7 @@ a {
   align-items: center;
   column-gap: 16px;
   margin-top: 0.5rem;
-  padding: 2rem 0;
+  padding: 2.5rem 0 3rem;
 }
 @media (max-width: 1239px) {
   .footer-nav {
