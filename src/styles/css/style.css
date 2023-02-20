@@ -645,7 +645,7 @@ a {
   display: inline-block;
   width: 250px;
   height: 250px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 @media (max-width: 1239px) {
   .similar-wallpaper {

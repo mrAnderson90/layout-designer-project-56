@@ -3,7 +3,7 @@
 
   &-wallpaper {
     @include square(250px);
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 
     @include mobile {
       @include square(137px);
