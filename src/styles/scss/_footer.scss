@@ -49,7 +49,6 @@
   &-nav {
     @include flex(flex-start);
     column-gap: 16px;
-		margin-top: 0.5rem;
 
     @include mobile {
       align-items: flex-start;
