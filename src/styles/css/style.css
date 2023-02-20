@@ -19,7 +19,7 @@
 }
 @media (max-width: 1239px) {
   .container {
-    margin: 0 20px;
+    padding: 0 20px;
   }
 }
 
@@ -376,7 +376,8 @@ a {
 }
 
 .hero {
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
   color: #ffffff;
 }
 @media (max-width: 1239px) {

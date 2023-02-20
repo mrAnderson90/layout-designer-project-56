@@ -1,5 +1,6 @@
 .hero {
-	padding: 200px 0;
+	padding-top: 200px;
+	padding-bottom: 200px;
   color: $white;
 
 	@include mobile {
