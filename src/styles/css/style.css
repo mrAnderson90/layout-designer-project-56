@@ -536,6 +536,11 @@ a {
   height: 278px;
 }
 
+.artist-title {
+  margin-top: 3rem;
+  margin-bottom: 20px;
+}
+
 .art-btns {
   display: grid;
   grid-template-columns: repeat(2, 200px);
