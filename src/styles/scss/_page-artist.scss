@@ -1,12 +1,17 @@
-.artist-title {
-	margin-top: 3rem;
-	margin-bottom: 20px;
+.artist {
+  color: $white;
+
+    &-title {
+      margin-top: 3rem;
+      margin-bottom: 20px;
+    }
 }
 
 .art-btns {
   display: grid;
   grid-template-columns: repeat(2, 200px);
   grid-gap: 1.5rem;
+  margin-bottom: 23px;
 
   @include mobile {
     grid-template-columns: 200px;

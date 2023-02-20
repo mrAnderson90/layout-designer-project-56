@@ -536,6 +536,9 @@ a {
   height: 278px;
 }
 
+.artist {
+  color: #ffffff;
+}
 .artist-title {
   margin-top: 3rem;
   margin-bottom: 20px;
@@ -545,6 +548,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 200px);
   grid-gap: 1.5rem;
+  margin-bottom: 23px;
 }
 @media (max-width: 1239px) {
   .art-btns {
