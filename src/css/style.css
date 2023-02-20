@@ -1,12 +1,12 @@
 @font-face {
   font-weight: 400;
   font-family: Roboto;
-  src: url("../../fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-weight: 700;
   font-family: Roboto;
-  src: url("../../fonts/Roboto/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
 }
 * {
   padding: 0;
@@ -260,25 +260,25 @@ a {
 .bg-hero {
   background-position: center;
   background-size: cover;
-  background-image: url("../../images/banner.png");
+  background-image: url("../images/banner.png");
 }
 
 .bg-free {
-  background-image: url("../../images/subscribe_1.png");
+  background-image: url("../images/subscribe_1.png");
 }
 
 .bg-standart {
-  background-image: url("../../images/subscribe_2.png");
+  background-image: url("../images/subscribe_2.png");
 }
 
 .bg-premium {
-  background-image: url("../../images/subscribe_3.png");
+  background-image: url("../images/subscribe_3.png");
 }
 
 .bg-artist {
   background-position: center;
   background-size: cover;
-  background-image: url("../../images/Morten Harket.png");
+  background-image: url("../images/Morten Harket.png");
 }
 
 .nav-container {
@@ -301,11 +301,6 @@ a {
   }
 }
 .nav-container .navbar > * {
-  /*
-     font-size: 11px;
-  font-weight: 400;
-  font-family: Roboto, sans-serif;
-  */
   font: 400 11px/1.5 Roboto, sans-serif;
   color: #cacaca;
   text-transform: uppercase;
@@ -334,7 +329,7 @@ a {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 1rem;
-  background-image: url("../../images/logo.svg");
+  background-image: url("../images/logo.svg");
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
@@ -499,7 +494,7 @@ a {
   display: inline-block;
   width: 19px;
   height: 19px;
-  background-image: url("../../images/avatar.png");
+  background-image: url("../images/avatar.png");
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
@@ -572,7 +567,7 @@ a {
   height: 20px;
   background-position: center;
   background-size: cover;
-  background-image: url("../../images/play-button.svg");
+  background-image: url("../images/play-button.svg");
   filter: invert(1);
   content: "";
 }
@@ -582,7 +577,7 @@ a {
   height: 20px;
   background-position: center;
   background-size: cover;
-  background-image: url("../../images/heart.svg");
+  background-image: url("../images/heart.svg");
   filter: invert(1);
   content: "";
 }

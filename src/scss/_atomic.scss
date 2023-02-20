@@ -111,24 +111,24 @@
 
 .bg-hero {
   @include bg-center {
-    background-image: url('../../images/banner.png');
+    background-image: url('../images/banner.png');
   }
 }
 
 .bg-free {
-  background-image: url("../../images/subscribe_1.png");
+  background-image: url("../images/subscribe_1.png");
 }
 
 .bg-standart {
-  background-image: url("../../images/subscribe_2.png");
+  background-image: url("../images/subscribe_2.png");
 }
 
 .bg-premium {
-  background-image: url("../../images/subscribe_3.png");
+  background-image: url("../images/subscribe_3.png");
 }
 
 .bg-artist {
   @include bg-center {
-    background-image: url("../../images/Morten Harket.png");
+    background-image: url("../images/Morten Harket.png");
   }
 }
