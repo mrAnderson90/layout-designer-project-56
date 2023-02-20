@@ -544,7 +544,7 @@ a {
   margin-bottom: 20px;
 }
 @media (max-width: 1239px) {
-  .artist {
+  .artist-title {
     margin-top: 1.5rem;
   }
 }
