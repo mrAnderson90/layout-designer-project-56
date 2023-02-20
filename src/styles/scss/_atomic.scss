@@ -105,6 +105,12 @@
   color: $orange;
 }
 
+.bg-hero {
+  @include bg-center {
+    background-image: url('../../images/banner.png');
+  }
+}
+
 .bg-free {
   background-image: url("../../images/subscribe_1.png");
 }

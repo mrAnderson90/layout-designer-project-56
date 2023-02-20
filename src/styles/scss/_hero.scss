@@ -1,9 +1,10 @@
 .hero {
-  background-image: url('../../images/banner.png');
-  background-position: center;
-  background-size: cover;
-
+	padding: 200px 0;
   color: $white;
+
+	@include mobile {
+		padding-top: 250px;
+	}
 
   h2 {
     margin-bottom: 2rem;
