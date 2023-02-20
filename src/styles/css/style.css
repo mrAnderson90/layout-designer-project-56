@@ -683,7 +683,7 @@ a {
 .footer-main {
   display: flex;
   column-gap: 40px;
-  padding: 3rem 0;
+  padding: 62px 0 72px;
 }
 @media (max-width: 1239px) {
   .footer-main {
@@ -695,7 +695,6 @@ a {
   display: flex;
   flex-direction: column;
   min-width: 250px;
-  margin: 14px 0 24px;
 }
 .footer-main-item h4 {
   margin-bottom: 1rem;
@@ -707,7 +706,7 @@ a {
   align-items: center;
   column-gap: 24px;
 }
-.footer-main-item .follow .follow-link {
+.footer-main-item .follow-link {
   display: inline-block;
 }
 .footer .line {
