@@ -3,7 +3,7 @@
   color: $white;
 
 	@include mobile {
-		padding-top: 250px;
+		padding-top: 248px;
 	}
 
   h2 {
@@ -34,7 +34,7 @@
       background-color: transparent;
 
       &::placeholder {
-        font: 700 14/1.1 Roboto, sans-serif;
+        font: 700 14px/1.1 Roboto, sans-serif;
         color: $white;
         padding-left: 20px;
       }

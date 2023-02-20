@@ -377,7 +377,7 @@ a {
 }
 @media (max-width: 1239px) {
   .hero {
-    padding-top: 250px;
+    padding-top: 248px;
   }
 }
 .hero h2 {
@@ -407,7 +407,7 @@ a {
   background-color: transparent;
 }
 .hero .registration-item::placeholder {
-  font: 700 14/1.1 Roboto, sans-serif;
+  font: 700 14px/1.1 Roboto, sans-serif;
   color: #ffffff;
   padding-left: 20px;
 }
