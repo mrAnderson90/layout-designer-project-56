@@ -16,11 +16,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-@media (max-width: 1239px) {
-  .container {
-    padding: 0 20px;
-  }
+  padding: 0 20px;
 }
 
 body {
@@ -434,6 +430,7 @@ a {
 }
 .pricing-item {
   box-sizing: border-box;
+  flex: 1 1 374px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: max-content 120px repeat(3, auto);
