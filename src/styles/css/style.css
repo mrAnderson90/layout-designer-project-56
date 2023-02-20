@@ -678,6 +678,7 @@ a {
 .footer-main {
   display: flex;
   column-gap: 40px;
+  margin: 14px 0 24px;
   padding: 3rem 0;
 }
 @media (max-width: 1239px) {
