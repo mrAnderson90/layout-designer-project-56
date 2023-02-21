@@ -29,6 +29,7 @@
   .play {
     &::before {
       @include square(20px);
+
       @include bg-center {
         background-image: url("../images/play-button.svg");
         filter: invert(1);
@@ -40,6 +41,7 @@
   .heart {
     &::before {
       @include square(20px);
+
       @include bg-center {
         background-image: url("../images/heart.svg");
         filter: invert(1);

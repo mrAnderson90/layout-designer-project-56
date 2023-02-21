@@ -12,6 +12,7 @@
 
   &-content {
     max-width: 50%;
+
     @include flex(flex-start, stretch) {
       flex-direction: column;
     }

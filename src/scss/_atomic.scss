@@ -4,7 +4,8 @@
 
 @function font($size) {
   $result: 16 * calc(($size + 1) / 2);
-  @return $result
+
+  @return $result;
 }
 
 @for $i from 1 through 7 {
@@ -44,7 +45,7 @@
 }
 
 .upperCase {
-  @include upCase;
+  @include up-case;
 }
 
 .capitalize {
@@ -111,7 +112,7 @@
 
 .bg-hero {
   @include bg-center {
-    background-image: url('../images/banner.png');
+    background-image: url("../images/banner.png");
   }
 }
 

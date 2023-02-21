@@ -16,7 +16,8 @@ h1,
 h2,
 h3 {
   text-align: center;
-  @include upCase;
+
+  @include up-case;
 }
 
 h1,
@@ -71,7 +72,8 @@ a {
   color: $white;
   border: none;
   border-radius: 5px;
-  @include upCase;
+
+  @include up-case;
   @include text-center;
   cursor: pointer;
 

@@ -30,8 +30,10 @@
 
     &::after {
       display: block;
+
       @extend .font-small;
       font-weight: 400;
+
       @include capitalize;
       @extend .left;
       color: $grey;

@@ -40,7 +40,7 @@
     }
 
     .value {
-      @include upCase;
+      @include up-case;
     }
   }
 
