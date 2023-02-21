@@ -1,5 +1,5 @@
 .discography {
-	@include grid-bar;
+  @include grid-bar;
 
   &-wallpaper {
     @include square(250px);
@@ -7,7 +7,7 @@
 
     @include mobile {
       @include square(137px);
-			margin-bottom: 10px;
+      margin-bottom: 10px;
     }
   }
 }

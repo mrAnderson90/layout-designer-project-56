@@ -25,7 +25,7 @@
         font-weight: 700;
       }
     }
-  
+
     .logo {
       margin-right: 90px;
       @include flex;
@@ -35,19 +35,19 @@
         margin-bottom: 1rem;
       }
 
-    &::before {
-      display: inline-block;
-      width: 1.5rem;
-      height: 1.5rem;
-  
-      margin-right: 1rem;
-      background-image: url("../images/logo.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      content: "";
+      &::before {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        margin-right: 1rem;
+        background-image: url("../images/logo.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
       }
     }
-  
+
     .nav-item {
       margin-right: 1.5rem;
 
@@ -55,7 +55,7 @@
         color: $white;
       }
     }
-  
+
     .search {
       margin-left: auto;
 
@@ -87,4 +87,3 @@
     }
   }
 }
-

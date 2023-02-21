@@ -9,9 +9,9 @@
 
 @for $i from 1 through 7 {
   $size: font($i);
-  
+
   .font-#{$size} {
-      font-size: #{$size}px;
+    font-size: #{$size}px;
   }
 }
 
