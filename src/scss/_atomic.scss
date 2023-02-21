@@ -17,7 +17,7 @@
 }
 
 .font-small {
-  font-size: 12.8px;
+  @extend %font-small;
 }
 
 .font-13 {
@@ -41,7 +41,7 @@
 }
 
 .left {
-  text-align: left;
+  @extend %left;
 }
 
 .upperCase {

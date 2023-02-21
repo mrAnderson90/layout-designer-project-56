@@ -18,6 +18,7 @@
     > * {
       font: 400 11px/1.5 Roboto, sans-serif;
       color: $primary;
+
       @include up-case;
 
       text-decoration: none;

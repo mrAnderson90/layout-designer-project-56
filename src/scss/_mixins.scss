@@ -1,3 +1,11 @@
+%font-small {
+  font-size: 12.8px;
+}
+
+%left {
+  text-align: left;
+}
+
 @mixin square($side) {
   display: inline-block;
   width: $side;

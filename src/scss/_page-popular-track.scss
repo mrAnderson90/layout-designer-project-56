@@ -25,17 +25,17 @@
   }
 
   &-title {
-    @extend .font-small;
+    @extend %font-small;
     @include bold;
 
     &::after {
       display: block;
 
-      @extend .font-small;
+      @extend %font-small;
       font-weight: 400;
 
       @include capitalize;
-      @extend .left;
+      @extend %left;
       color: $grey;
 
       content: "Morten Harket";
